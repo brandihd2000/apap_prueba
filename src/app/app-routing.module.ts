@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./Features/Page/Consulta/Cuenta/cuenta.module').then((m) => m.CuentaModule)
   },
   { 
+    path: 'Consulta/Prestamo', 
+    loadChildren: () => import('./Features/Page/Consulta/Prestamo/prestamo.module').then((m) => m.PrestamoModule)
+  },
+  {
     path: 'Consulta/tarjetas', 
     loadChildren: () => import('./Features/Page/Consulta/Tarjetas/tarjetas.module').then((m) => m.TarjetasModule)
   },

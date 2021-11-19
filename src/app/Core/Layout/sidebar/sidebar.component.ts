@@ -43,7 +43,12 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Prestamos',
-          icon: 'mdi mdi-folder-multiple'
+          icon: 'mdi mdi-folder-multiple',
+          url: 'Consulta/Prestamo'
+        },
+        {
+          label: 'Tarjetas',
+          icon: 'mdi mdi-credit-card'
         },
         {
           label: 'Tarjetas',
