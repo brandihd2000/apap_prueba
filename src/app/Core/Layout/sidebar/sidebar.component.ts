@@ -53,7 +53,9 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Historico de Transferencias',
-          icon: 'mdi mdi-format-list-bulleted'
+          icon: 'mdi mdi-format-list-bulleted',
+          url: 'Consulta/TransferHistory'
+
         },
         {
           label: 'Consulta NCF',

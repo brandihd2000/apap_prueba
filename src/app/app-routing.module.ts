@@ -6,31 +6,34 @@ const routes: Routes = [
   {
     path: '', redirectTo: 'example', pathMatch: 'full'
   },
-  { 
-    path: 'example', 
+  {
+    path: 'example',
     loadChildren: () => import('./Features/Page/example/example.module').then((m) => m.ExampleModule)
   },
-  { 
-    path: 'Consulta/Todo-Producto', 
+  {
+    path: 'Consulta/Todo-Producto',
     loadChildren: () => import('./Features/Page/Consulta/TodoProducto/todo-producto.module').then((m) => m.TodoProductoModule)
   },
-  { 
-    path: 'Consulta/Cuenta', 
+  {
+    path: 'Consulta/Cuenta',
     loadChildren: () => import('./Features/Page/Consulta/Cuenta/cuenta.module').then((m) => m.CuentaModule)
   },
-  { 
-    path: 'Consulta/Prestamo', 
+  {
+    path: 'Consulta/Prestamo',
     loadChildren: () => import('./Features/Page/Consulta/Prestamo/prestamo.module').then((m) => m.PrestamoModule)
   },
   {
-    path: 'Consulta/tarjetas', 
+    path: 'Consulta/tarjetas',
     loadChildren: () => import('./Features/Page/Consulta/Tarjetas/tarjetas.module').then((m) => m.TarjetasModule)
   },
   {
-  path: 'Consulta/ConsultarNCF', 
-  loadChildren: () => import('./Features/Page/Consulta/consultar-ncf/consultar-ncf.module').then((m) => m.ConsultarNCFModule)
-},
-  
+    path: 'Consulta/ConsultarNCF',
+    loadChildren: () => import('./Features/Page/Consulta/consultar-ncf/consultar-ncf.module').then((m) => m.ConsultarNCFModule)
+  },
+  {
+    path: 'Consulta/TransferHistory',
+    loadChildren: () => import('./Features/Page/Consulta/transfer-history/transfer-history.module').then((m) => m.TransferHistoryModule)
+  },
 ];
 
 @NgModule({
