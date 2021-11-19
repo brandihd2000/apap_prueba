@@ -4,7 +4,6 @@ import { RoutingCuentaModule } from './routing.module';
 import { CuentaComponent } from './cuenta.component';
 
 
-
 @NgModule({
   declarations: [
     CuentaComponent
