@@ -51,6 +51,11 @@ export class SidebarComponent implements OnInit {
           icon: 'mdi mdi-credit-card'
         },
         {
+          label: 'Tarjetas',
+          icon: 'mdi mdi-credit-card',
+          url: 'Consulta/tarjetas'
+        },
+        {
           label: 'Historico de Transferencias',
           icon: 'mdi mdi-format-list-bulleted'
         },
