@@ -55,7 +55,8 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Consulta NCF',
-          icon: 'mdi mdi-twitter-retweet'
+          icon: 'mdi mdi-twitter-retweet',
+          url: 'Consulta/ConsultarNCF'
         },]
       },
       {

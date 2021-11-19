@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'Consulta/Cuenta', 
     loadChildren: () => import('./Features/Page/Consulta/Cuenta/cuenta.module').then((m) => m.CuentaModule)
   },
+  { 
+    path: 'Consulta/ConsultarNCF', 
+    loadChildren: () => import('./Features/Page/Consulta/consultar-ncf/consultar-ncf.module').then((m) => m.ConsultarNCFModule)
+  },
 ];
 
 @NgModule({
