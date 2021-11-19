@@ -10,15 +10,10 @@ node_modules
 /tmp
 /out-tsc
 /.angular
-<<<<<<< HEAD
-# dependencies
-/node_modules
-=======
 
 # dependencies
 /node_modules
 
->>>>>>> ab80b5574cf9189db2836b466a6f16c2ebf6205d
 # IDEs and editors
 /.idea
 .project
@@ -27,10 +22,6 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-<<<<<<< HEAD
-=======
-
->>>>>>> ab80b5574cf9189db2836b466a6f16c2ebf6205d
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
