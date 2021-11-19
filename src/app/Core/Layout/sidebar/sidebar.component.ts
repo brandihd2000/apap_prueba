@@ -64,11 +64,14 @@ export class SidebarComponent implements OnInit {
         icon: 'mdi mdi-chevron-double-right',
         subMenu: [{
           label: 'A mis cuentas',
-          icon: 'mdi mdi-twitter-retweet'
+          icon: 'mdi mdi-twitter-retweet',
+          url: 'Transferir/Miscuentas'
+
         },
         {
           label: 'A beneficiario en APAP',
-          icon: 'mdi mdi-trending-neutral'
+          icon: 'mdi mdi-trending-neutral',
+          url: 'Transferir/BeneficiarioAPAP'
         },
         {
           label: 'A beneficiario en otra entidad',
