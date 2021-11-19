@@ -48,10 +48,6 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Tarjetas',
-          icon: 'mdi mdi-credit-card'
-        },
-        {
-          label: 'Tarjetas',
           icon: 'mdi mdi-credit-card',
           url: 'Consulta/tarjetas'
         },
