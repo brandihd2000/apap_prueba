@@ -43,11 +43,13 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Prestamos',
-          icon: 'mdi mdi-folder-multiple'
+          icon: 'mdi mdi-folder-multiple',
+          url: 'Consulta/Prestamo'
         },
         {
           label: 'Tarjetas',
-          icon: 'mdi mdi-credit-card'
+          icon: 'mdi mdi-credit-card',
+          url: 'Consulta/tarjetas'
         },
         {
           label: 'Historico de Transferencias',
@@ -55,7 +57,8 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'Consulta NCF',
-          icon: 'mdi mdi-twitter-retweet'
+          icon: 'mdi mdi-twitter-retweet',
+          url: 'Consulta/ConsultarNCF'
         },]
       },
       {

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TarjetasModule } from './Features/Page/Consulta/Tarjetas/tarjetas.module';
 
 const routes: Routes = [
   {
@@ -17,6 +18,19 @@ const routes: Routes = [
     path: 'Consulta/Cuenta', 
     loadChildren: () => import('./Features/Page/Consulta/Cuenta/cuenta.module').then((m) => m.CuentaModule)
   },
+  { 
+    path: 'Consulta/Prestamo', 
+    loadChildren: () => import('./Features/Page/Consulta/Prestamo/prestamo.module').then((m) => m.PrestamoModule)
+  },
+  {
+    path: 'Consulta/tarjetas', 
+    loadChildren: () => import('./Features/Page/Consulta/Tarjetas/tarjetas.module').then((m) => m.TarjetasModule)
+  },
+  {
+  path: 'Consulta/ConsultarNCF', 
+  loadChildren: () => import('./Features/Page/Consulta/consultar-ncf/consultar-ncf.module').then((m) => m.ConsultarNCFModule)
+},
+  
 ];
 
 @NgModule({
