@@ -75,11 +75,14 @@ export class SidebarComponent implements OnInit {
         },
         {
           label: 'A beneficiario en otra entidad',
-          icon: 'mdi mdi-transit-transfer'
+          icon: 'mdi mdi-transit-transfer',
+          url: 'Transferir/Beneficiario-otra-entidad'
+
         },
         {
           label: 'Transferencias pendientes',
-          icon: 'mdi mdi-format-list-bulleted'
+          icon: 'mdi mdi-format-list-bulleted',
+          url: 'Transferir/Transferencias-pendientes'
         },]
       },
       {
@@ -87,27 +90,33 @@ export class SidebarComponent implements OnInit {
         icon: 'mdi mdi-library-books',
         subMenu: [{
           label: 'Tarjetas APAP',
-          icon: 'mdi mdi-credit-card'
+          icon: 'mdi mdi-credit-card',
+          url: 'Pagar/Tarjetas-apap'
         },
       {
         label: 'Tarjetas otros bancos',
-          icon: 'mdi mdi-credit-card'
+          icon: 'mdi mdi-credit-card',
+          url: 'Pagar/Tarjetas-bancos'
       },
       {
         label: 'Préstamos APAP',
-          icon: 'mdi mdi-checkbox-marked-outline'
+          icon: 'mdi mdi-checkbox-marked-outline',
+          url: 'Pagar/Prestamos-apap'
       },
       {
         label: 'Pagar préstamos en otros bancos',
-          icon: 'mdi mdi-checkbox-marked-outline'
+          icon: 'mdi mdi-checkbox-marked-outline',
+          url: 'Pagar/Prestamos-otros-banco'   
       },
       {
         label: 'Pagar facturas',
-          icon: 'mdi mdi-calendar'
+          icon: 'mdi mdi-calendar',
+          url: 'Pagar/Pagar-facturas'
       },
       {
         label: 'Impuestos DGII',
-          icon: 'mdi mdi-plus-circle'
+          icon: 'mdi mdi-plus-circle',
+          url: 'Pagar/Impuestos-D'
       },]
       },
       {
@@ -115,19 +124,23 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi-account-outline',
       subMenu: [{
         label: 'Mi listado de beneficiarios',
-        icon: 'mdi mdi-view-list'
+        icon: 'mdi mdi-view-list',
+        url: 'Beneficiarios/Listado-beneficiarios' 
       },
     {
       label: 'Agregar beneficiario',
-        icon: 'mdi mdi-plus'
+        icon: 'mdi mdi-plus',
+        url: 'Beneficiarios/Agregar-beneficiario' 
     },
     {
       label: 'Mis servicios & facturas',
-        icon: 'mdi mdi-view-list'
+        icon: 'mdi mdi-view-list',
+        url: 'Beneficiarios/Mis-servicios-facturas'
     },
     {
       label: 'Agregar proveedor de servicios básicos',
-        icon: 'mdi mdi-plus'
+        icon: 'mdi mdi-plus',
+        url: 'Beneficiarios/Agregar-proveedor'
     },]
     },
     {
@@ -135,19 +148,23 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi-credit-card',
       subMenu: [{
         label: 'Avances de efectivo TC',
-        icon: 'mdi mdi-checkbox-marked-outline'
+        icon: 'mdi mdi-checkbox-marked-outline',
+        url: 'ServiciosTarjetas/Avance-efectivotc'
       },
     {
       label: 'Reportar viaje',
-        icon: 'mdi mdi-credit-card'
+        icon: 'mdi mdi-credit-card',
+        url: 'ServiciosTarjetas/Reportar-viaje'
     },
     {
       label: 'Bloquear esta tarjeta',
-        icon: 'mdi mdi-wrench'
+        icon: 'mdi mdi-wrench',
+        url: 'ServiciosTarjetas/Bloquear-tarjeta'
     },
     {
       label: 'Activar tarjeta',
-        icon: 'mdi mdi-wrench'
+        icon: 'mdi mdi-wrench',
+        url: 'ServiciosTarjetas/Activar-tarjeta'
     },]
     },
     {
@@ -155,27 +172,33 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi-thumb-up-outline',
       subMenu: [{
         label: 'Diseñar mis metas de ahorro',
-        icon: 'mdi mdi-signal'
+        icon: 'mdi mdi-signal',
+        url: 'BienestarFinanciero/Metas-ahorro'
       },
     {
       label: 'Consumo inteligente',
-        icon: 'mdi mdi-cart'
+        icon: 'mdi mdi-cart',
+        url: 'BienestarFinanciero/Consumo-inteligente'
     },
     {
       label: 'Soy Digital',
-        icon: 'mdi mdi-emoticon'
+        icon: 'mdi mdi-emoticon',
+        url: 'BienestarFinanciero/Soy-digital'   
     },
     {
       label: 'Indicadores financieros a conocer',
-        icon: 'mdi mdi-view-list'
+        icon: 'mdi mdi-view-list',
+        url: 'BienestarFinanciero/Indicadores-financieros'    
     },
     {
       label: 'Simuladores',
-        icon: 'mdi mdi-view-agenda'
+        icon: 'mdi mdi-view-agenda',
+        url: 'BienestarFinanciero/Simuladores' 
     },
     {
       label: 'Herramientas de asesoría financiera',
-        icon: 'mdi mdi-paperclip'
+        icon: 'mdi mdi-paperclip',
+        url: 'BienestarFinanciero/Herramientas-asesoria' 
     },]
     },
     {
@@ -183,19 +206,23 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi mdi-wrench',
       subMenu: [{
         label: 'Cambiar clave',
-        icon: 'mdi mdi-account-outline'
+        icon: 'mdi mdi-account-outline',
+        url: 'MiPerfilAjustes/Cambiar-clave'
       },
     {
       label: 'Actualizar información de contacto',
-        icon: 'mdi mdi mdi-wrench'
+        icon: 'mdi mdi mdi-wrench',
+        url: 'MiPerfilAjustes/Actualizar-informacion'
     },
     {
       label: 'Preferencias HOLAPAP',
-        icon: 'mdi mdi mdi-wrench'
+        icon: 'mdi mdi mdi-wrench',
+        url: 'MiPerfilAjustes/Preferencias-holapap'
     },
     {
       label: 'Asignar el propósito de mis productos',
-        icon: 'mdi mdi mdi-wrench'
+        icon: 'mdi mdi mdi-wrench',
+        url: 'MiPerfilAjustes/Asignar-proposito-productos'
     },]
     },
     {
@@ -203,11 +230,13 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi-wechat',
       subMenu: [{
         label: 'Enviar mensaje',
-        icon: 'mdi mdi-message-plus'
-      },
+        icon: 'mdi mdi-message-plus',
+        url: 'CentroMensajes/Enviar-mensaje'
+    },
     {
       label: 'Mis mensajes',
-        icon: 'mdi mdi-email'
+        icon: 'mdi mdi-email',
+        url: 'CentroMensajes/Mis-mensajes'
     },]
     },
     {
@@ -215,11 +244,13 @@ export class SidebarComponent implements OnInit {
       icon: 'mdi mdi-web',
       subMenu: [{
         label: 'Inglés',
-        icon: ''
+        icon: '',
+        url: 'Idiomas/Ingles'
       },
     {
       label: 'Español',
-        icon: ''
+        icon: '',
+        url: 'Idiomas/Espanol'
     },]
     },
 
